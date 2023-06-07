@@ -1,6 +1,7 @@
+import { index } from "./index.css";
 export function Header() {
   return (
-    <header>
+    <header role="banner">
       <nav className="navbar navbar-expand-lg bg-primary">
         <div className="container-fluid">
           <a className="navbar-brand" href="/">
@@ -19,24 +20,36 @@ export function Header() {
           </button>
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-              <li className="nav-item">
+              <li className="active">
                 <a className="nav-link active" aria-current="page" href="/">
                   Home
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/journal_entries">
+                <a className="nav-link" href="/all_products">
                   All Products
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/journal_entries/new">
+                <a className="nav-link" href="/new_products/new">
                   New Products
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/Moods/new">
+                <a className="nav-link" href="/sale_products/sale">
                   Sale products
+                </a>
+              </li>
+
+              <li className="nav-item">
+                <a className="nav-link" href="/signup">
+                  Signup
+                </a>
+              </li>
+
+              <li className="nav-item">
+                <a className="nav-link" href="/login">
+                  Login
                 </a>
               </li>
             </ul>
