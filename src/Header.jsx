@@ -1,65 +1,32 @@
-import { index } from "./index.css";
+import "./index.css";
 export function Header() {
   return (
     <header role="banner">
-      <nav className="navbar navbar-expand-lg bg-primary">
-        <div className="container-fluid">
-          <a className="navbar-brand" href="/">
-            Country Fresh Finer Foods
-          </a>
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon"></span>
-          </button>
-          <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-              <li className="active">
-                <a className="nav-link active" aria-current="page" href="/">
-                  Home
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="/all_products">
-                  All Products
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="/new_products/new">
-                  New Products
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="/sale_products/sale">
-                  Sale products
-                </a>
-              </li>
-
-              <li className="nav-item">
-                <a className="nav-link" href="/signup">
-                  Signup
-                </a>
-              </li>
-
-              <li className="nav-item">
-                <a className="nav-link" href="/login">
-                  Login
-                </a>
-              </li>
-            </ul>
-            <form className="d-flex" role="search">
-              <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-              <button className="btn btn-outline-success" type="submit">
-                Search
-              </button>
-            </form>
-          </div>
+      <img
+        id="logo-main"
+        src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/32877/logo-thing.png"
+        width="200"
+        alt="Logo Thing main logo"
+      ></img>
+      <nav id="navbar-primary" className="navbar navbar-default" role="navigation">
+        <div className="navbar-header">
+          <ul className="navbar-nav">
+            <li className="active">
+              <a href="#">Link</a>
+            </li>
+            <li>
+              <a href="#">Link</a>
+            </li>
+            <li>
+              <a href="#">Link</a>
+            </li>
+            <li>
+              <a href="#">Link</a>
+            </li>
+            <li>
+              <a href="#">Link</a>
+            </li>
+          </ul>
         </div>
       </nav>
     </header>

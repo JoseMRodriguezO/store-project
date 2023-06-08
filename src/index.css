@@ -1,6 +1,13 @@
-#root {
+#root > div { 
   font-family: Futura, Trebuchet MS, Arial, sans-serif;
+  
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
   background-image: url("./assets/shapelined-_JBKdviweXI-unsplash.jpg");
+  height: 100%;
 }
 
 header[role="banner"] {
@@ -13,12 +20,16 @@ header[role="banner"] {
 #navbar-primary.navbar-default {
   background: transparent;
   border: none;
-  .navbar-nav { 
+  
+.navbar-nav { 
+    display: inline-block;
+   
+    margin-left: 50%;
+    margin-right: 50%;
     width: 100%;
     text-align: center;
     > li {
-      display: inline-block;
-      float: none;
+      float: left;
       > a {
         padding-left: 30px;
         padding-right: 30px;
@@ -26,3 +37,4 @@ header[role="banner"] {
     }
   }
 }
+
